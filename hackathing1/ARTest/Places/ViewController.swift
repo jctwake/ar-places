@@ -23,6 +23,7 @@
 import UIKit
 
 import MapKit
+import GoogleMaps
 import CoreLocation
 
 class ViewController: UIViewController {
@@ -32,6 +33,8 @@ class ViewController: UIViewController {
   fileprivate var startedLoadingPOIs = false
   fileprivate var places = [Place]()
   fileprivate var arViewController: ARViewController!
+  fileprivate var panoViewController: PanoViewController!
+  
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -64,10 +67,33 @@ class ViewController: UIViewController {
   }
   
   func showInfoView(forPlace place: Place) {
-    let alert = UIAlertController(title: place.placeName, message: place.infoText, preferredStyle: UIAlertControllerStyle.alert)
-    alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+    let alert = UIAlertController(title: place.placeName, message: place.infoText, preferredStyle: .actionSheet)
+    alert.addAction(UIAlertAction(title: "StreetView", style: UIAlertActionStyle.default, handler: { (action) in
+      self.showStreetView(forPlace: place)
+    }))
+    alert.addAction(UIAlertAction(title: "Done", style: UIAlertActionStyle.default, handler: nil))
+
     
     arViewController.present(alert, animated: true, completion: nil)
+  }
+  
+  func showStreetView(forPlace place: Place) {
+    
+    self.dismiss(animated: false, completion: nil)
+    
+    panoViewController = PanoViewController()
+    panoViewController.coordinate = place.location?.coordinate
+    panoViewController.markerTitle = place.placeName
+    
+    self.present(panoViewController, animated: false, completion: nil)
+    
+//    let panoView = GMSPanoramaView(frame: .zero)
+//    let marker = GMSMarker(position: (place.location?.coordinate)!)
+//    
+//    self.view = panoView
+//    panoView.moveNearCoordinate((place.location?.coordinate)!)
+//    marker.panoramaView = panoView
+    
   }
 }
 
