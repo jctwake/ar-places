@@ -28,6 +28,7 @@
 		1B07CD432003092900C900F9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B07CD422003092900C900F9 /* SystemConfiguration.framework */; };
 		1B07CD452003092F00C900F9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B07CD442003092F00C900F9 /* UIKit.framework */; };
 		1B07CD472003172700C900F9 /* PanoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B07CD462003172700C900F9 /* PanoViewController.swift */; };
+		1B07CD492003AF5D00C900F9 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B07CD482003AF5D00C900F9 /* CoreMotion.framework */; };
 		8F7404471DCDD569009A6F0B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7404461DCDD569009A6F0B /* AppDelegate.swift */; };
 		8F7404491DCDD569009A6F0B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7404481DCDD569009A6F0B /* ViewController.swift */; };
 		8F74044C1DCDD569009A6F0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F74044A1DCDD569009A6F0B /* Main.storyboard */; };
@@ -69,6 +70,7 @@
 		1B07CD422003092900C900F9 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		1B07CD442003092F00C900F9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1B07CD462003172700C900F9 /* PanoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PanoViewController.swift; sourceTree = "<group>"; };
+		1B07CD482003AF5D00C900F9 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		8F7404431DCDD569009A6F0B /* ARTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F7404461DCDD569009A6F0B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8F7404481DCDD569009A6F0B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B07CD492003AF5D00C900F9 /* CoreMotion.framework in Frameworks */,
 				1B07CD452003092F00C900F9 /* UIKit.framework in Frameworks */,
 				1B07CD432003092900C900F9 /* SystemConfiguration.framework in Frameworks */,
 				1B07CD412003091B00C900F9 /* QuartzCore.framework in Frameworks */,
@@ -121,6 +124,7 @@
 		1B07CD29200308A900C900F9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1B07CD482003AF5D00C900F9 /* CoreMotion.framework */,
 				1B07CD442003092F00C900F9 /* UIKit.framework */,
 				1B07CD422003092900C900F9 /* SystemConfiguration.framework */,
 				1B07CD402003091B00C900F9 /* QuartzCore.framework */,
