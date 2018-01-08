@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B07CD1E2002E82F00C900F9 /* PlaceAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B07CD1D2002E82F00C900F9 /* PlaceAnnotation.swift */; };
+		1B07CD202002EEB900C900F9 /* AnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B07CD1F2002EEB900C900F9 /* AnnotationView.swift */; };
 		8F7404471DCDD569009A6F0B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7404461DCDD569009A6F0B /* AppDelegate.swift */; };
 		8F7404491DCDD569009A6F0B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7404481DCDD569009A6F0B /* ViewController.swift */; };
 		8F74044C1DCDD569009A6F0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F74044A1DCDD569009A6F0B /* Main.storyboard */; };
@@ -27,7 +29,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8F7404431DCDD569009A6F0B /* Places.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Places.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B07CD1D2002E82F00C900F9 /* PlaceAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceAnnotation.swift; sourceTree = "<group>"; };
+		1B07CD1F2002EEB900C900F9 /* AnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnotationView.swift; sourceTree = "<group>"; };
+		8F7404431DCDD569009A6F0B /* ARTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F7404461DCDD569009A6F0B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8F7404481DCDD569009A6F0B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8F74044B1DCDD569009A6F0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -72,7 +76,7 @@
 		8F7404441DCDD569009A6F0B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8F7404431DCDD569009A6F0B /* Places.app */,
+				8F7404431DCDD569009A6F0B /* ARTest.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -84,6 +88,8 @@
 				8F7404481DCDD569009A6F0B /* ViewController.swift */,
 				8F74047E1DCF31B0009A6F0B /* PlacesLoader.swift */,
 				8F74047F1DCF31B0009A6F0B /* Place.swift */,
+				1B07CD1D2002E82F00C900F9 /* PlaceAnnotation.swift */,
+				1B07CD1F2002EEB900C900F9 /* AnnotationView.swift */,
 				8F7404581DCDD5F5009A6F0B /* HDAugmentedReality */,
 				8F74044A1DCDD569009A6F0B /* Main.storyboard */,
 				8F74044D1DCDD569009A6F0B /* Assets.xcassets */,
@@ -137,9 +143,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8F7404421DCDD569009A6F0B /* Places */ = {
+		8F7404421DCDD569009A6F0B /* ARTest */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8F7404551DCDD569009A6F0B /* Build configuration list for PBXNativeTarget "Places" */;
+			buildConfigurationList = 8F7404551DCDD569009A6F0B /* Build configuration list for PBXNativeTarget "ARTest" */;
 			buildPhases = (
 				8F74043F1DCDD569009A6F0B /* Sources */,
 				8F7404401DCDD569009A6F0B /* Frameworks */,
@@ -149,9 +155,9 @@
 			);
 			dependencies = (
 			);
-			name = Places;
+			name = ARTest;
 			productName = Places;
-			productReference = 8F7404431DCDD569009A6F0B /* Places.app */;
+			productReference = 8F7404431DCDD569009A6F0B /* ARTest.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -161,17 +167,17 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0810;
-				ORGANIZATIONNAME = "Razeware LLC";
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "";
 				TargetAttributes = {
 					8F7404421DCDD569009A6F0B = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = KL6NU6Q5M2;
+						DevelopmentTeam = 68KUR433C8;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 8F74043E1DCDD569009A6F0B /* Build configuration list for PBXProject "Places" */;
+			buildConfigurationList = 8F74043E1DCDD569009A6F0B /* Build configuration list for PBXProject "ARTest" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -184,7 +190,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8F7404421DCDD569009A6F0B /* Places */,
+				8F7404421DCDD569009A6F0B /* ARTest */,
 			);
 		};
 /* End PBXProject section */
@@ -212,7 +218,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F7404801DCF31B0009A6F0B /* PlacesLoader.swift in Sources */,
+				1B07CD202002EEB900C900F9 /* AnnotationView.swift in Sources */,
 				8F74046A1DCDD5F5009A6F0B /* ARViewController.swift in Sources */,
+				1B07CD1E2002E82F00C900F9 /* PlaceAnnotation.swift in Sources */,
 				8F7404491DCDD569009A6F0B /* ViewController.swift in Sources */,
 				8F7404661DCDD5F5009A6F0B /* ARAnnotation.swift in Sources */,
 				8F74046B1DCDD5F5009A6F0B /* DebugMapViewController.swift in Sources */,
@@ -264,12 +272,15 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 68KUR433C8;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -313,12 +324,15 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 68KUR433C8;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -341,10 +355,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = KL6NU6Q5M2;
+				DEVELOPMENT_TEAM = 68KUR433C8;
 				INFOPLIST_FILE = Places/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.razeware.Places;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jct.ARTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -354,10 +368,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = KL6NU6Q5M2;
+				DEVELOPMENT_TEAM = 68KUR433C8;
 				INFOPLIST_FILE = Places/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.razeware.Places;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jct.ARTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -366,7 +380,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8F74043E1DCDD569009A6F0B /* Build configuration list for PBXProject "Places" */ = {
+		8F74043E1DCDD569009A6F0B /* Build configuration list for PBXProject "ARTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8F7404531DCDD569009A6F0B /* Debug */,
@@ -375,7 +389,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8F7404551DCDD569009A6F0B /* Build configuration list for PBXNativeTarget "Places" */ = {
+		8F7404551DCDD569009A6F0B /* Build configuration list for PBXNativeTarget "ARTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8F7404561DCDD569009A6F0B /* Debug */,
